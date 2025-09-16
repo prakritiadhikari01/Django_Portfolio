@@ -1,0 +1,137 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}Projects | Prakriti Adhikari{% endblock %}
+
+{% block content %}
+<!-- Projects Section -->
+<section id="projects" class="py-16 container mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">
+            My <span class="text-purple-500">Projects</span>
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            A collection of projects that showcase my passion for creating innovative solutions 
+            using cutting-edge technologies and creative problem-solving approaches.
+        </p>
+    </div>
+
+    <!-- Featured Projects -->
+    <h3 class="text-2xl font-semibold text-center mb-8">Featured Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project Card 1 -->
+        <div class="border border-purple-200 rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col">
+            <div class="flex-grow">
+                <h4 class="text-xl font-bold text-purple-600 mb-2">ReflectCast</h4>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                    AI-powered bedtime podcast generator that creates personalized, calming 
+                    stories and reflections based on user preferences and daily experiences.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">Python</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">OpenAI API</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">React</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">Node.js</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">MongoDB</span>
+                </div>
+            </div>
+            <div class="flex gap-4 mt-4">
+                <a href="#" target="_blank" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+                <a href="#" target="_blank" class="px-4 py-2 bg-purple-600 text-white rounded-md">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="border border-purple-200 rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col">
+            <div class="flex-grow">
+                <h4 class="text-xl font-bold text-purple-600 mb-2">Smart Traffic Light Automation</h4>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                    IoT-based traffic management system using computer vision and machine learning 
+                    to optimize traffic flow and reduce congestion.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">Python</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">OpenCV</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">Arduino</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">TensorFlow</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">IoT</span>
+                </div>
+            </div>
+            <div class="flex gap-4 mt-4">
+                <a href="#" target="_blank" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Projects -->
+    <h3 class="text-2xl font-semibold text-center mt-16 mb-8">Other Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Hydroponic System -->
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+            <h4 class="text-lg font-bold text-purple-600 mb-2">Hydroponic System App</h4>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                Mobile and web app for monitoring and controlling hydroponic systems with real-time visualization.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">React Native</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Express.js</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">PostgreSQL</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-md">Demo</a>
+            </div>
+        </div>
+
+        <!-- Recipe App -->
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+            <h4 class="text-lg font-bold text-purple-600 mb-2">Recipe Discovery App</h4>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                Intelligent recipe recommendation system that suggests meals based on ingredients and preferences.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">React</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Django</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">PostgreSQL</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-md">Demo</a>
+            </div>
+        </div>
+
+        <!-- Student Performance -->
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+            <h4 class="text-lg font-bold text-purple-600 mb-2">Student Performance Analytics</h4>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                Data analytics platform for institutions to track performance and predict academic outcomes.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Python</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Pandas</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Scikit-learn</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+            </div>
+        </div>
+
+        <!-- Weather Model -->
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition md:col-span-3">
+            <h4 class="text-lg font-bold text-purple-600 mb-2">Weather Prediction Model</h4>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                Machine learning model for accurate weather forecasting using historical and environmental data.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Python</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">TensorFlow</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Pandas</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
