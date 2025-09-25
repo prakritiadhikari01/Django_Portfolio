@@ -1,5 +1,6 @@
 import datetime
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import ContactForm
 
 def home(request):
     context = {"year": datetime.datetime.now().year}
@@ -15,4 +16,13 @@ def certificates(request):
     return render(request, "home/certificates.html")
 
 def contact(request):
-    return render(request, "home/contact.html")
+    success = False
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()  # saves to database
+            success = True
+            form = ContactForm()  # clear the form
+    else:
+        form = ContactForm()
+    return render(request, 'home/contact.html', {'form': form, 'success': success})
