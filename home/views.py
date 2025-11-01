@@ -14,7 +14,7 @@ def projects(request):
 
 from django.shortcuts import render
 
-def certificates_view(request):
+def certificates(request):
     certificates = [
         {
             "title": "NIC College Ambassador 2025",
@@ -22,7 +22,7 @@ def certificates_view(request):
             "date": "August 9, 2025",
             "description": "National Innovation Certificate.",
             "tags": ["Networking", "Certificate"],
-            "image": "/static/images/NIC.png",
+            "image": "images/NIC.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/NIC.pdf"
         },
         {
@@ -31,7 +31,7 @@ def certificates_view(request):
             "date": "2023",
             "description": "Web development using Django framework.",
             "tags": ["Web Development", "Django"],
-            "image": "/static/images/Django.png",
+            "image": "images/Django.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Django.pdf"
         },
         {
@@ -40,7 +40,7 @@ def certificates_view(request):
             "date": "2023",
             "description": "Recognition certificate.",
             "tags": ["Recognition"],
-            "image": "/static/images/Nobel.png",
+            "image": "images/Nobel.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Nobel.pdf"
         },
         {
@@ -49,7 +49,7 @@ def certificates_view(request):
             "date": "2023",
             "description": "Version control using Git & GitHub.",
             "tags": ["Version Control", "Git"],
-            "image": "/static/images/Git.png",
+            "image": "images/Git.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Git.pdf"
         },
         {
@@ -58,7 +58,7 @@ def certificates_view(request):
             "date": "Feb 2024",
             "description": "Team-based hackathon participation showcasing ideation and prototyping.",
             "tags": ["Hackathon", "Teamwork", "Prototype"],
-            "image": "/static/images/Hackathon.png",
+            "image": "images/Hackathon.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Hackathon.pdf"
         },
         {
@@ -67,7 +67,7 @@ def certificates_view(request):
             "date": "2023",
             "description": "Designing user-friendly interfaces and experiences.",
             "tags": ["UI/UX", "Design"],
-            "image": "/static/images/UI.png",
+            "image": "images/UI.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/UI.pdf"
         },
         {
@@ -76,7 +76,7 @@ def certificates_view(request):
             "date": "2023",
             "description": "Digital marketing strategies and campaign execution.",
             "tags": ["Marketing", "Digital"],
-            "image": "/static/images/Digital_Marketing.png",
+            "image": "images/Digital_Marketing.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Digital_Marketing_Workshop.pdf"
         },
         {
@@ -85,7 +85,7 @@ def certificates_view(request):
             "date": "Mar 2024",
             "description": "Workshop on leadership and communication skills.",
             "tags": ["Leadership", "Communication"],
-            "image": "/static/images/Effective_Leadership.png",
+            "image": "images/Effective_Leadership.png",
             "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Effective_Leadership.pdf"
         },
     ]
