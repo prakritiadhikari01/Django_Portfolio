@@ -9,7 +9,7 @@
     <div class="text-center mb-12">
       <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Featured Certifications</h1>
       <p class="mt-3 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-        Some of the certifications and recognitions I've earned — click "View Credential" to verify each certificate.
+        Some of the certifications and recognitions I've earned — click the image or "View Credential" to see the certificate.
       </p>
     </div>
 
@@ -25,7 +25,9 @@
           <!-- top icon / image area -->
           <div class="flex items-center justify-center h-40 rounded-lg bg-gradient-to-b from-purple-100/40 to-white">
             {% if cert.image %}
-              <img src="{% static cert.image %}" alt="{{ cert.title }}" class="h-24 object-contain" />
+              <a href="{% static cert.image %}" target="_blank" rel="noopener noreferrer">
+                <img src="{% static cert.image %}" alt="{{ cert.title }}" class="h-24 object-contain" />
+              </a>
             {% else %}
               <!-- placeholder ribbon icon -->
               <svg width="56" height="56" viewBox="0 0 24 24" fill="none" class="text-purple-300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -59,15 +61,18 @@
             </div>
             {% endif %}
 
+            <!-- clickable button to open the image too -->
+            {% if cert.image %}
             <div class="mt-6">
-              <a href="{{ cert.link }}"
-                 target="_blank"
-                 rel="noopener noreferrer"
+              <a href="{% static cert.image %}" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 text-sm bg-white hover:bg-purple-50 focus:outline-none focus:ring-2 focus:ring-purple-300">
-                <svg class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 3h7v7m0 0L10 21l-7-7L14 3z"/></svg>
+                <svg class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 3h7v7m0 0L10 21l-7-7L14 3z"/>
+                </svg>
                 View Credential
               </a>
             </div>
+            {% endif %}
 
           </div>
         </div>

@@ -13,80 +13,79 @@ def projects(request):
     return render(request, 'home/projects.html')
 
 from django.shortcuts import render
-
 def certificates(request):
     certificates = [
         {
             "title": "NIC College Ambassador 2025",
-            "issuer": "NIC",
+            "issuer": "National Innovation Centre",
             "date": "August 9, 2025",
-            "description": "National Innovation Certificate.",
-            "tags": ["Networking", "Certificate"],
-            "image": "images/NIC.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/NIC.pdf"
+            "description": "Promoted NIC programs, organized events, and engaged peers as a student ambassador.",
+            "tags": ["Leadership", "Student Ambassador", "Event Management", "Networking"],
+            "image": "certificates/NIC.png",
         },
         {
             "title": "Django",
-            "issuer": "Course/Workshop",
-            "date": "2023",
-            "description": "Web development using Django framework.",
-            "tags": ["Web Development", "Django"],
-            "image": "images/Django.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Django.pdf"
+            "issuer": "Workshop",
+            "date": "2025",
+            "description": "Built dynamic web applications using Django framework, applying MVC architecture and database integration.",
+            "tags": ["Web Development", "Django", "Backend", "Full-Stack"],
+            "image": "certificates/Django.png",
         },
         {
-            "title": "Nobel Certificate",
-            "issuer": "Institution",
-            "date": "2023",
-            "description": "Recognition certificate.",
-            "tags": ["Recognition"],
-            "image": "images/Nobel.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Nobel.pdf"
+            "title": "Nobel Fundamentals Internship Certificate",
+            "issuer": "Nobel Fundamentals (International Program)",
+            "date": "2025",
+            "description": "Completed 90-hour internship focusing on web design, communication, troubleshooting, and leadership skills.",
+            "tags": ["Internship", "Leadership", "Web Design", "Communication", "Technical Skills"],
+            "image": "certificates/Nobel.png",
+        },
+        {
+            "title": "Flutter Internship",
+            "issuer": "Thulo Technology Pvt. Ltd.",
+            "date": "2025",
+            "description": "Completed internship on Flutter app development, building responsive mobile applications.",
+            "tags": ["Flutter", "Mobile Development", "App Development", "Internship"],
+            "image": "certificates/Flutter.png",
         },
         {
             "title": "Git & GitHub",
             "issuer": "Course/Workshop",
-            "date": "2023",
-            "description": "Version control using Git & GitHub.",
-            "tags": ["Version Control", "Git"],
-            "image": "images/Git.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Git.pdf"
+            "date": "2024",
+            "description": "Mastered version control with Git and GitHub, including branching, merging, and collaborative workflows.",
+            "tags": ["Version Control", "Git", "Collaboration", "Software Development"],
+            "image": "certificates/Git.png",
         },
         {
             "title": "Hackathon Participation",
             "issuer": "Various / Event",
-            "date": "Feb 2024",
-            "description": "Team-based hackathon participation showcasing ideation and prototyping.",
-            "tags": ["Hackathon", "Teamwork", "Prototype"],
-            "image": "images/Hackathon.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Hackathon.pdf"
+            "date": "2024",
+            "description": "Participated in team-based hackathon, developing innovative solutions through ideation, prototyping, and collaboration.",
+            "tags": ["Hackathon", "Teamwork", "Innovation", "Problem Solving", "Prototyping"],
+            "image": "certificates/Hackathon.png",
         },
         {
             "title": "UI Design",
             "issuer": "Workshop",
-            "date": "2023",
-            "description": "Designing user-friendly interfaces and experiences.",
-            "tags": ["UI/UX", "Design"],
-            "image": "images/UI.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/UI.pdf"
+            "date": "2024",
+            "description": "Designed intuitive and user-friendly interfaces with focus on aesthetics, usability, and user experience principles.",
+            "tags": ["UI/UX", "Design", "Creativity", "User Experience"],
+            "image": "certificates/UI.png",
         },
         {
             "title": "Digital Marketing",
             "issuer": "Workshop",
-            "date": "2023",
-            "description": "Digital marketing strategies and campaign execution.",
-            "tags": ["Marketing", "Digital"],
-            "image": "images/Digital_Marketing.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Digital_Marketing_Workshop.pdf"
+            "date": "2025",
+            "description": "Learned and applied digital marketing strategies including campaigns, SEO, and social media engagement.",
+            "tags": ["Digital Marketing", "SEO", "Campaigns", "Social Media", "Marketing"],
+            "image": "certificates/Digital_Marketing.png",
         },
         {
             "title": "Effective Leadership",
-            "issuer": "Workshop",
-            "date": "Mar 2024",
-            "description": "Workshop on leadership and communication skills.",
-            "tags": ["Leadership", "Communication"],
-            "image": "images/Effective_Leadership.png",
-            "link": "https://github.com/prakritiadhikari01/Certificates/blob/main/Effective_Leadership.pdf"
+            "issuer": "Course",
+            "date": "2024",
+            "description": "Developed leadership and communication skills through practical exercises and teamwork scenarios.",
+            "tags": ["Leadership", "Communication", "Teamwork", "Personal Development"],
+            "image": "certificates/Effective_Leadership.png",
         },
     ]
     return render(request, "home/certificates.html", {"certificates": certificates})
