@@ -49,7 +49,7 @@ def certificates(request):
         },
         {
             "title": "Git & GitHub",
-            "issuer": "Course/Workshop",
+            "issuer": "Workshop",
             "date": "2024",
             "description": "Mastered version control with Git and GitHub, including branching, merging, and collaborative workflows.",
             "tags": ["Version Control", "Git", "Collaboration", "Software Development"],
