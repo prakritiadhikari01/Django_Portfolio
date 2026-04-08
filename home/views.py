@@ -16,6 +16,14 @@ from django.shortcuts import render
 def certificates(request):
     certificates = [
         {
+            "title": "Hackathon Nova 2025",
+            "issuer": "CAPEC × ITEC-PEC",
+            "date": "Jan 27-29, 2026",
+            "description": "Developed MoodMate, an ethical AI-powered emotional reflection platform.",
+            "tags": ["AI", "Hackathon", "Django", "NLP", "Ethical AI", "Teamwork"],
+            "image": "certificates/hackathon_nova.png"
+        },
+        {
             "title": "NIC College Ambassador 2025",
             "issuer": "National Innovation Centre",
             "date": "August 9, 2025",
@@ -56,10 +64,10 @@ def certificates(request):
             "image": "certificates/Git.png",
         },
         {
-            "title": "Hackathon Participation",
+            "title": "Hackathon Participation (Yantra)",
             "issuer": "Various / Event",
             "date": "2024",
-            "description": "Participated in team-based hackathon, developing innovative solutions through ideation, prototyping, and collaboration.",
+            "description": "Participated in team-based hackathon, developing 'Sajilo Rental' through ideation, prototyping, and collaboration.",
             "tags": ["Hackathon", "Teamwork", "Innovation", "Problem Solving", "Prototyping"],
             "image": "certificates/Hackathon.png",
         },
