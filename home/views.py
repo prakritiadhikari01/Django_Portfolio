@@ -21,7 +21,7 @@ def certificates(request):
             "date": "Jan 27-29, 2026",
             "description": "Developed MoodMate, an ethical AI-powered emotional reflection platform.",
             "tags": ["AI", "Hackathon", "Django", "NLP", "Ethical AI", "Teamwork"],
-            "image": "certificates/hackathon_nova.png"
+            "image": "certificates/Nova.png"
         },
         {
             "title": "NIC College Ambassador 2025",
