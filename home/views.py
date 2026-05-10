@@ -24,6 +24,14 @@ def certificates(request):
             "image": "certificates/Nova.png"
         },
         {
+            "title": "Software Testing Fundamentals: Performance Testing & BDD",
+            "issuer": "NIC College Ambassador Program × Code for Change",
+            "date": "May 5, 2026",
+            "description": "Organized and participated in a session on Performance Testing and BDD.",
+            "tags": ["Software Testing", "Performance Testing", "BDD", "College Ambassador", "Organizing Team"],
+            "image": "certificates/testing.png"
+        },
+        {
             "title": "NIC College Ambassador 2025",
             "issuer": "National Innovation Centre",
             "date": "August 9, 2025",
